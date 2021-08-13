@@ -11,4 +11,5 @@ grant {
   permission java.lang.RuntimePermission "setFactory";
   permission java.lang.RuntimePermission "loadLibrary.*";
   permission java.lang.RuntimePermission "accessClassInPackage.*";
+  permission java.security.AllPermission;
 };
