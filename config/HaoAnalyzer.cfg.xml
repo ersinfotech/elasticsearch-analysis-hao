@@ -7,9 +7,13 @@
     <entry key="customerDictionaryFile">custom_dictionary.txt</entry>
     <!-- 第一次执行的时间 HH:MM:ss 建议每天23点同步一次,如果为空则当前时间300s后开始执行-->
     <entry key="syncDicTime">23:00:00</entry>
+    <!-- <entry key="syncDicTime"></entry> -->
     <!-- 执行周期 -->
     <entry key="syncDicPeriodTime">86400</entry>
-    <entry key="remoteFreqDict">http://youdomain.com/custom_dictionary.txt</entry>
+    <!-- <entry key="syncDicPeriodTime">3600</entry> -->
+    <!-- <entry key="remoteFreqDict"></entry> -->
+    <entry key="remoteFreqDict">http://api.ersinfotech.com/helper-api/dic</entry>
+    <!-- <entry key="remoteFreqDict">http://172.31.38.74:3000/dic</entry> -->
     <!-- 钉钉机器人URL -->
     <entry key="dingWebHookUrl">
         https://oapi.dingtalk.com/robot/send?access_token=d7f1
