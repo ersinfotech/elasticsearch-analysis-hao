@@ -7,6 +7,6 @@ sed -i "s/if (vertex.length > 1 \&\& isIndexMode)/if (vertex.length >= 1 \&\& is
 
 sed -i "s/if (enableSingleWord || subTerm.getEnd() - subTerm.getOffset() != 1) {/if (dictionary.getMetaWords().contains(subTerm.getText())) {\n                                termList.add(subTerm);\n                            } else if (enableSingleWord || subTerm.getEnd() - subTerm.getOffset() != 1) {/" src/main/java/com/itenlee/search/analysis/core/DijkstraSeg.java
 
-sed -i "s#<entry key=\"remoteFreqDict\"></entry>#<entry key=\"remoteFreqDict\">http://api.ersinfotech.com/helper-api/dic</entry>#" config/HaoAnalyzer.cfg.xml
+sed -i "s#<entry key=\"remoteFreqDict\">.*</entry>#<entry key=\"remoteFreqDict\">http://api.ersinfotech.com/helper-api/dic</entry>#" config/HaoAnalyzer.cfg.xml
 
 echo 应用hao-ers分词补丁完成
