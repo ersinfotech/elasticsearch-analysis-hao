@@ -30,7 +30,7 @@ public class HaoTokenizerFactory extends AbstractTokenizerFactory {
      * @param settings      自定义分析器配置参数
      */
     public HaoTokenizerFactory(IndexSettings indexSettings, String name, Environment env, Settings settings) {
-        super(indexSettings, settings, name);
+        super(indexSettings, name, settings);
         configuration = new Configuration(indexSettings, name, env, settings);
     }
 

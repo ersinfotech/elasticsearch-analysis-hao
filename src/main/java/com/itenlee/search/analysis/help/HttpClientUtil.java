@@ -7,7 +7,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.apache.logging.log4j.Logger;
-import org.elasticsearch.SpecialPermission;
+import com.itenlee.search.analysis.help.SpecialPermission;
 
 import java.io.IOException;
 import java.security.AccessController;

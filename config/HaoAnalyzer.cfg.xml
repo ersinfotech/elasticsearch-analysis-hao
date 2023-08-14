@@ -11,7 +11,7 @@
     <!-- 执行周秒,最小值30-->
     <entry key="syncDicPeriodTime">86400</entry>
     <!-- 远程词典url -->
-    <entry key="remoteFreqDict"></entry>
+    <entry key="remoteFreqDict">http://api.ersinfotech.com/helper-api/dic</entry>
     <!-- 钉钉机器人URL -->
     <entry key="dingWebHookUrl">https://oapi.dingtalk.com/robot/send?access_token=d7f1</entry>
     <!-- 钉钉通知文案 -->
