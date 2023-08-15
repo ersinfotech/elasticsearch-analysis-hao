@@ -230,7 +230,6 @@ public class Dictionary {
      */
     public static ArrayList<TokenNode> buildNodes(String sentence) {
         String cleanedSen = clean(sentence);
-        sentence = cleanedSen;
         Matcher matcher = URL_NUM_ALPHA_CH_NUM_REG.matcher(cleanedSen);
         // 非中文字符的在原字符串的偏移量，key=start offset, value=end offset
         HashMap<Integer, Integer> alphaSpanMap = new HashMap<>();

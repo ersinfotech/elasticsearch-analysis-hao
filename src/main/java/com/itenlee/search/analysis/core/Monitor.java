@@ -6,7 +6,7 @@ import com.itenlee.search.analysis.help.HttpClientUtil;
 import com.itenlee.search.analysis.lucence.Configuration;
 import okhttp3.Response;
 import org.apache.logging.log4j.Logger;
-import com.itenlee.search.analysis.help.SpecialPermission;
+import org.elasticsearch.SpecialPermission;
 
 import java.security.AccessController;
 import java.security.PrivilegedAction;

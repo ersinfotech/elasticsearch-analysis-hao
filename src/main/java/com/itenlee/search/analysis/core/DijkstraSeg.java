@@ -187,7 +187,7 @@ public class DijkstraSeg {
             }
             termList.add(termMain);
 
-            if (vertex.length >= 1 && isIndexMode) {
+            if (vertex.length > 1 && isIndexMode) {
                 // 过长词所在的行
                 int currentLine = vertex.linkedListIndex;
                 // ==== 优化hanlp的逻辑开始。子词也要走最短路分词
@@ -199,9 +199,7 @@ public class DijkstraSeg {
                         List<Term> subTerms = decorateResultForIndexMode(subVertex, wordNetAll, isIndexMode, enableSingleWord);
                         for (Term subTerm : subTerms) {
                             // 一个词拆后的单字不要了。比如 体力|值，[值]不要了
-                            if (dictionary.getMetaWords().contains(subTerm.getText())) {
-                                termList.add(subTerm);
-                            } else if (enableSingleWord || subTerm.getEnd() - subTerm.getOffset() != 1) {
+                            if (enableSingleWord || subTerm.getEnd() - subTerm.getOffset() != 1) {
                                 termList.add(subTerm);
                             }
                         }
