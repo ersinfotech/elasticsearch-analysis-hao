@@ -8,6 +8,12 @@ curl -X GET "localhost:30105/_analyze?pretty" -H 'Content-Type: application/json
   "char_filter": ["html_strip"],
   "text" : "体力值"
 }'
+curl -X GET "localhost:30105/_analyze?pretty" -H 'Content-Type: application/json' -d'
+{
+  "tokenizer" : "hao_index_mode",
+  "char_filter": ["html_strip"],
+  "text" : "㒓 奮發圖強"
+}'
 ```
 
 ## 打包步骤
