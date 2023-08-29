@@ -1,5 +1,5 @@
 
-element=5.6.8
+element=5.6.16
 
 sed -i "s/super(name, settings);/super(indexSettings, name, settings);/" src/main/java/org/elasticsearch/index/analysis/hao/HaoAnalyzerProvider.java
 sed -i "s/super(indexSettings, settings, name)/super(indexSettings, name, settings)/" src/main/java/org/elasticsearch/index/analysis/hao/HaoTokenizerFactory.java
