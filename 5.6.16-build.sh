@@ -25,4 +25,6 @@ EOF
 
 sed -i "s/<elasticsearch\.version>.*<\/elasticsearch\.version>/<elasticsearch\.version>$element<\/elasticsearch\.version>/g" pom.xml
 
+sed -i "/<artifactId>kotlin-stdlib<\/artifactId>/{n;s/<version>.*<\/version>/<version>1.3.72<\/version>/;}" pom.xml
+
 # mvn clean package -Dmaven.test.skip=true
