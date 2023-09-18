@@ -19,6 +19,11 @@ curl -X GET "localhost:30105/_analyze?pretty" -H 'Content-Type: application/json
 ## 打包步骤
 
 ```sh
+# 去掉hanlp t2s.txt 字典中转换前后长度不一致的词语
+node clean_t2s.js
+```
+
+```sh
 # 请先确保在 main 分支，并且同步了 https://github.com/tenlee2012/elasticsearch-analysis-hao 的最新代码
 sh ers-patch.sh
 
@@ -27,8 +32,8 @@ sh ers-patch.sh
 ## 5.x
 
 ```sh
-# 先修改5.6.8-build.sh 中的version, 默认5.6.8
-sh 5.6.8-build.sh
+# 先修改5.6.16-build.sh 中的version, 默认5.6.16
+sh 5.6.16-build.sh
 
 # mvn clean package -Dmaven.test.skip=true
 ```
