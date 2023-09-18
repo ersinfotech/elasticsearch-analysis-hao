@@ -1,6 +1,8 @@
 
 echo 准备应用hao-ers分词补丁
 
+node clean_t2s.js
+
 sed -i "s/String cleanedSen = clean(sentence);/String cleanedSen = clean(sentence);\n        sentence = cleanedSen;/" src/main/java/com/itenlee/search/analysis/core/Dictionary.java
 
 sed -i "s/if (simpleCN.length() == sentence.length()) {/if (true) {/" src/main/java/com/itenlee/search/analysis/core/Dictionary.java
