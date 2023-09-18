@@ -1,6 +1,8 @@
 
 element=5.6.16
 
+sh ers-patch.sh
+
 sed -i "s/super(name, settings);/super(indexSettings, name, settings);/" src/main/java/org/elasticsearch/index/analysis/hao/HaoAnalyzerProvider.java
 sed -i "s/super(indexSettings, settings, name)/super(indexSettings, name, settings)/" src/main/java/org/elasticsearch/index/analysis/hao/HaoTokenizerFactory.java
 sed -i "s/org.elasticsearch.core.PathUtils/org.elasticsearch.common.io.PathUtils/" src/main/java/com/itenlee/search/analysis/lucence/Configuration.java

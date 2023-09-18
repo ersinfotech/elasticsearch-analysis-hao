@@ -10,7 +10,7 @@ const newlines = lines.filter((line, i) => {
   const ok = t.length === s.length
   if (!ok) {
     console.log('removed', i, line)
-  } 
+  }
   return ok
 })
 
