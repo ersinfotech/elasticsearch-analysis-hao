@@ -45,3 +45,28 @@ sh 5.6.16-build.sh
 # 请参考 README.md
 
 ```
+
+## 8.x
+
+```sh
+
+# 请参考 README.md
+
+```
+
+## maven 镜像
+
+~/.m2/settings.xml
+
+```xml
+<settings>
+  <mirrors>
+    <mirror>
+        <id>aliyunmaven</id>
+        <mirrorOf>*</mirrorOf>
+        <name>阿里云公共仓库</name>
+        <url>https://maven.aliyun.com/repository/public</url>
+    </mirror>
+  </mirrors>
+</settings>
+```
