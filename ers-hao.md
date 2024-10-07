@@ -49,7 +49,7 @@ sh 5.6.16-build.sh
 ## 8.x
 
 ```sh
-
+# 需要 java-17-openjdk
 # 请参考 README.md
 
 ```
